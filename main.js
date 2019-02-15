@@ -16,13 +16,23 @@ function startGame() {
   let userPlay = prompt("Do you want to play?", "yes or no");
   if (userPlay.toLowerCase() === "yes") {
     userName = prompt("Enter your name to start the battle:");
+  } else {
+    console.log(`Refresh the page and enter your name when you are ready to play`);
   }
-  console.log(userName);
+  //console.log(userName);
 }
 
-startGame();
+//startGame();
 
 
+/* DAMAGE FUNCTION */
+
+function getDamage() {
+  let randomHit = Math.floor(Math.random() * 5 + 1);
+  return randomHit;
+}
+
+console.log(getDamage());
 
 //   /* START BATTLE SEQUENCE */
 
