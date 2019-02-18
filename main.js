@@ -48,9 +48,10 @@ function startCombat() {
 
     let attackOrQuit = prompt("Attack or Quit?");
 
+    attackOrQuit = attackOrQuit.toLowerCase();
     /* If attack, run through attack sequence */
 
-    if (attackOrQuit.toLowerCase() === "attack") {
+    if (attackOrQuit === "attack") {
       
       userHealthPoints = userHealthPoints - getDamage();
       grantHealthPoints = grantHealthPoints - getDamage();
@@ -98,7 +99,7 @@ function startCombat() {
           );
         }
       }  
-    } else if (attackOrQuit.toLowerCase() === "quit") {
+    } else if (attackOrQuit === "quit") {
       console.log(`You have left the battle field. Come back when you are ready to fight Grant!`);
       break;
     }
