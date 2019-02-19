@@ -89,7 +89,7 @@ function startGame() {
     let userName = prompt("Enter your name to start the battle:");
     startCombat(userName);
   } else {
-      console.log(`Refresh the page and enter your name when you are ready to play.`);
+      console.log(`Refresh the page when you are ready to play.`);
   }
 };
 
