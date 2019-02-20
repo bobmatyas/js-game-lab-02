@@ -29,8 +29,8 @@ function startCombat(userName) {
       /* If attack, run through attack sequence */
 
       if (attackOrQuit === "attack") {
-        userHealthPoints = userHealthPoints - getDamage();
-        grantHealthPoints = grantHealthPoints - getDamage();
+        userHealthPoints -= getDamage();
+        grantHealthPoints -= getDamage();
 
         if (userHealthPoints > 0) {
             console.log(`${userName} has ${userHealthPoints} health left.`);
@@ -82,6 +82,7 @@ function startCombat(userName) {
     }
   }
 
+/* Start the Game */
 
 function startGame() {
   let userPlay = prompt("Do you want to play?", "yes or no");
